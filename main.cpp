@@ -30,7 +30,7 @@ double getdownandoutput(int nInt = 0,
 
 
 
-	Option OptionOne(nInt, strike, spot, vol, r, expiry, Barrier);
+	EuropeOption OptionOne(nInt, strike, spot, vol, r, expiry, Barrier);
 
 
 	double price =	OptionOne.getdownandoutput(nReps);
