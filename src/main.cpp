@@ -12,7 +12,7 @@ using namespace Rcpp;
 
 // [[Rcpp::export]]
 
-double getdownandoutput(int nInt = 0,
+double getdownandoutput(int nInt = 20,
 
 							  double strike = 100,
 
