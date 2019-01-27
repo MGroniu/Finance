@@ -1,3 +1,4 @@
+#include<Rcpp.h>
 #include"EuropeOption.h"
 #include<cmath>
 #include<iostream>
