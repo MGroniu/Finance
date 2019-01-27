@@ -13,7 +13,7 @@ EuropeOption::EuropeOption(
 	double vol_,
 	double r_,
 	double expiry_){
-	  Barier = Barier_;
+	    Barrier = Barrier_;
 		nInt = nInt_;
 		strike = strike_;
 		spot = spot_;
@@ -40,7 +40,7 @@ double EuropeOption::getdownandoutput(int nReps){
 	double rollingSum = 0.0;
 	double thisMin = 0.0;
 
-	for(int i = 0; i < nReps; i++){f
+	for(int i = 0; i < nReps; i++){
 		generatePath();
 		thisMin = std::min_element(thisPath.begin(), thisPath.end());
 		if(thisMin>Barrier){
