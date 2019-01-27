@@ -29,7 +29,8 @@ double getdownandoutput(int nInt = 0,
                               int nReps = 800){
 
 
-
+    // set the seed
+	srand( time(NULL) );
 
 	EuropeOption OptionOne(nInt, strike, spot, vol, r, expiry, Barrier);
 
