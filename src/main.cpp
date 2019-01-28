@@ -3,6 +3,7 @@
 #include<cmath>
 #include<iostream>
 #include"Random1.h"
+#include<vector>
 
 using std::vector;
 

@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // getdownandoutput
 double getdownandoutput(int nInt, double strike, double spot, double vol, double r, double expiry, double Barrier, int nReps);
-RcppExport SEXP _AppFinance_getdownandoutput(SEXP nIntSEXP, SEXP strikeSEXP, SEXP spotSEXP, SEXP volSEXP, SEXP rSEXP, SEXP expirySEXP, SEXP BarrierSEXP, SEXP nRepsSEXP) {
+RcppExport SEXP _EuropeOption_getdownandoutput(SEXP nIntSEXP, SEXP strikeSEXP, SEXP spotSEXP, SEXP volSEXP, SEXP rSEXP, SEXP expirySEXP, SEXP BarrierSEXP, SEXP nRepsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -24,12 +24,15 @@ BEGIN_RCPP
 END_RCPP
 }
 
+RcppExport SEXP _EuropeOption_rcpp_hello_world();
+
 static const R_CallMethodDef CallEntries[] = {
-    {"_AppFinance_getdownandoutput", (DL_FUNC) &_AppFinance_getdownandoutput, 8},
+    {"_EuropeOption_getdownandoutput", (DL_FUNC) &_EuropeOption_getdownandoutput, 8},
+    {"_EuropeOption_rcpp_hello_world", (DL_FUNC) &_EuropeOption_rcpp_hello_world, 0},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_AppFinance(DllInfo *dll) {
+RcppExport void R_init_EuropeOption(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

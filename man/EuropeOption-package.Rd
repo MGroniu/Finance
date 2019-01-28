@@ -1,6 +1,6 @@
-\name{AppFinance-package}
-\alias{AppFinance-package}
-\alias{AppFinance}
+\name{EuropeOption-package}
+\alias{EuropeOption-package}
+\alias{EuropeOption}
 \docType{package}
 \title{
   A short title line describing what the package does
