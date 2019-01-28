@@ -6,7 +6,7 @@ public:
 
 	//constructor
 	EuropeOption(
-        double Barrier_,
+    double Barrier_,
 		int nInt_,
 		double strike_,
 		double spot_,
@@ -20,11 +20,9 @@ public:
 
 	//methods
 	void generatePath();
-	double getdownandoutput(nReps);
+	double getdownandoutput(int nReps);
 
 
-	//overloaded operator ()
-	double operator()(char char1, char char2, int nReps);
 
 	//members
 	std::vector<double> thisPath;
