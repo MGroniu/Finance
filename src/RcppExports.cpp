@@ -23,16 +23,3 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-
-RcppExport SEXP _EuropeOption_rcpp_hello_world();
-
-static const R_CallMethodDef CallEntries[] = {
-    {"_EuropeOption_getdownandoutput", (DL_FUNC) &_EuropeOption_getdownandoutput, 8},
-    {"_EuropeOption_rcpp_hello_world", (DL_FUNC) &_EuropeOption_rcpp_hello_world, 0},
-    {NULL, NULL, 0}
-};
-
-RcppExport void R_init_EuropeOption(DllInfo *dll) {
-    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
-    R_useDynamicSymbols(dll, FALSE);
-}
