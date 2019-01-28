@@ -20,7 +20,7 @@ public:
 
 	//methods
 	void generatePath();
-	double getdownandoutput();
+	double getdownandoutput(nReps);
 
 
 	//overloaded operator ()

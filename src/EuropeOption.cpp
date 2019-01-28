@@ -6,7 +6,7 @@
 
 //definition of constructor
 EuropeOption::EuropeOption(
-    double Barrier,
+    double Barrier_,
 	int nInt_,
 	double strike_,
 	double spot_,
